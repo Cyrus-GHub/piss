@@ -147,7 +147,7 @@ What's left, apart from a reboot?
 
 * espanso edit
 * Add Git SSH key
-* Gnome Extensions: Clipboard Indicator, Color Picker
+* Gnome Extensions: Clipboard Indicator, Color Picker, Application Volume Mixer, Sound Input & Output Device Chooser
 * CTT config -> Performance, Security,QEMU
 * Startup Applications:
 rfkill block bluetooth
