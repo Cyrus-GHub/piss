@@ -135,23 +135,25 @@ cd nautilus-copy-path
 make install
 nautilus -q
 
-# Install non-free codecs, gnome-tweaks application, VLC media player and Shotwell Image Viewer
+# Install gnome-tweaks application, VLC media player and Shotwell Image Viewer
 sudo apt install gnome-tweaks vlc shotwell -y
 
 
 <<com
 What's left, apart from a reboot?
 
-1. espanso edit
-2. Add Git SSH key
-3. Gnome Extensions: Clipboard Indicator, Color Picker
-4. CTT config -> Performance, Security,QEMU
-5. Startup Applications:
+* espanso edit
+* Add Git SSH key
+* Gnome Extensions: Clipboard Indicator, Color Picker
+* CTT config -> Performance, Security,QEMU
+* Startup Applications:
 rfkill block bluetooth
 system76-power profile performance (Only on PopOS)
-6. Remove the default 4-finger gestures to avoid clashes:
+* Mouse Acceleration
+* Wallpaper
+* Remove the default 4-finger gestures to avoid clashes:
 sudo gedit /usr/share/touchegg/touchegg.conf (Only on PopOS)
-7. Just in case. Windows ISO Flasher for Linux- WoeUSB-ng:
+* Just in case. Windows ISO Flasher for Linux- WoeUSB-ng:
 sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common grub-pc-bin
 sudo pip3 install ng-WoeUSB
 com
