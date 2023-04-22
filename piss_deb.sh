@@ -130,8 +130,8 @@ cd nautilus-copy-path
 make install
 nautilus -q
 
-# Install gnome-tweaks application, VLC media player and Shotwell Image Viewer
-sudo apt install gnome-tweaks vlc shotwell -y
+# Install gnome-tweaks application, OBS, VLC media player and Shotwell Image Viewer
+sudo apt install gnome-tweaks obs-studio vlc shotwell -y
 
 # Wallpaper
 wget https://github.com/ItsCyrus/piss/raw/main/W.PNG
