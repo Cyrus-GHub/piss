@@ -77,8 +77,8 @@ cd ~
 # Keyboard Config
 wget https://raw.githubusercontent.com/Cyrus-GHub/piss/main/keybindings.dconf
 wget https://raw.githubusercontent.com/Cyrus-GHub/piss/main/custom-keybindings.dconf
-dconf load '/org/gnome/desktop/wm/keybindings/' < keybindings.dconf
-dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < custom-keybindings.dconf
+dconf load '/org/gnome/desktop/wm/keybindings/' < keybindings.dconf -y
+dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < custom-keybindings.dconf -y
 
 # Brave
 sudo apt install curl -y
@@ -102,11 +102,6 @@ sudo apt install git -y
 sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb
 sudo apt install gdebi -y
 sudo gdebi GitHubDesktop-linux-3.1.1-linux1.deb -y
-
-# Anaconda
-wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
-shasum -a 256 Anaconda3-2022.10-Linux-x86_64.sh
-bash Anaconda3-2022.10-Linux-x86_64.sh
 
 # Zoom
 wget https://zoom.us/client/5.13.5.431/zoom_amd64.deb
@@ -137,6 +132,14 @@ nautilus -q
 
 # Install gnome-tweaks application, VLC media player and Shotwell Image Viewer
 sudo apt install gnome-tweaks vlc shotwell -y
+
+# Wallpaper
+wget https://github.com/ItsCyrus/piss/raw/main/W.PNG
+
+# Anaconda
+wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
+shasum -a 256 Anaconda3-2022.10-Linux-x86_64.sh
+bash Anaconda3-2022.10-Linux-x86_64.sh
 
 
 <<com
