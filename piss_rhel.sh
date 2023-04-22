@@ -87,7 +87,7 @@ What's left, apart from a reboot?
 1. espanso edit
 2. Add Git SSH key
 3. Install gnome-tweaks vlc shotwell
-4. Gnome Extensions: Clipboard Indicator, Color Picker
+4. Gnome Extensions: Clipboard Indicator, Color Picker, Application Volume Mixer, Sound Input & Output Device Chooser
 5. CTT config -> Performance, Security,QEMU
 6. Startup Applications:
 rfkill block bluetooth
