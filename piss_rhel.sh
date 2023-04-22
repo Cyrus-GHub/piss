@@ -22,8 +22,8 @@ cd ~
 # Keyboard Config
 wget https://raw.githubusercontent.com/Cyrus-GHub/piss/main/keybindings.dconf
 wget https://raw.githubusercontent.com/Cyrus-GHub/piss/main/custom-keybindings.dconf
-dconf load '/org/gnome/desktop/wm/keybindings/' < keybindings.dconf
-dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < custom-keybindings.dconf
+dconf load '/org/gnome/desktop/wm/keybindings/' < keybindings.dconf -y
+dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < custom-keybindings.dconf -y
 
 # Brave
 sudo dnf install dnf-plugins-core -y
@@ -43,12 +43,6 @@ sudo rpm --import https://rpm.packages.shiftkey.dev/gpg.key -y
 sudo sh -c 'echo -e "[shiftkey-packages]\nname=GitHub Desktop\nbaseurl=https://rpm.packages.shiftkey.dev/rpm/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://rpm.packages.shiftkey.dev/gpg.key" > /etc/yum.repos.d/shiftkey-packages.repo' -y
 sudo dnf update
 sudo dnf install github-desktop -y
-
-# Anaconda
-curl --output anaconda.sh https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh -y
-chmod +x anaconda.sh -y
-bash anaconda.sh
-source ~/.bashrc
 
 # Zoom
 wget https://zoom.us/client/5.14.0.1720/zoom_x86_64.rpm
@@ -76,6 +70,15 @@ git clone https://github.com/chr314/nautilus-copy-path.git
 cd nautilus-copy-path
 make install
 nautilus -q
+
+# Wallpaper
+wget https://github.com/ItsCyrus/piss/raw/main/W.PNG
+
+# Anaconda
+curl --output anaconda.sh https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh -y
+chmod +x anaconda.sh -y
+bash anaconda.sh
+source ~/.bashrc
 
 
 <<com
